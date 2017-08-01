@@ -1,0 +1,40 @@
+Package: KinVis
+Title: A Visual Analytic Tool for Visualizing Kinship Data in Genome Wide Association Studies
+Version: 1.0.0
+Authors@R: c(
+	person("Arun", "Das", email = "arun_das@brown.edu", role = c("aut", "cre")),
+	person("Abhishek", "Patil", email = "abhishekpatil1996@gmail.com", role = "aut"),
+	person("Michael", "Aupetit", email = "maupetit@hbku.edu.qa", role = "aut"))
+Description: KinVis is a visual analytic tool for visualizing Kinship data in GWAS, and is built entirely in R and Shiny.
+	KinVis provides users with a way of importing GWAS data, and then visualizing kinship on inter- and intra- population levels.
+Depends: R (>= 3.3.0)
+Imports:
+	cowplot,
+	shiny,
+	shinyjs,
+	shinyBS,
+	stringr,
+	plotly,
+	shinythemes,
+	plyr,
+	miniUI,
+	reshape2,
+	readr,
+	data.table,
+	dendextend,
+	gplots,
+	ggplot2,
+	ggrepel,
+	ggdendro,
+	ggExtra,
+	gridExtra,
+	shinydashboard,
+	markdown,
+	tools,
+	Matrix,
+	RColorBrewer,
+	dplyr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
