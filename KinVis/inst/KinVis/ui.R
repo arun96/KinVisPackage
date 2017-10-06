@@ -15,10 +15,10 @@ fluidPage (
   #give title to web page and web browser
   titlePanel(
     #web page title at the top
-    title = h1("Visualization Of GWAS Data",align = "center"),
+    title = h1("KinVis",align = "center"),
     
     #title shown in tab of browsers
-    windowTitle = "GWAS Visualization App"
+    windowTitle = "KinVis"
   ),
   
   #--------------------------------MAIN INTERFACE---------------------------------
