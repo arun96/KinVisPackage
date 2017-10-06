@@ -282,13 +282,13 @@ server <-
         # POP: MDS and Bar Graphs | IND: BarPop, HeatMap, BarInd and BarLgnd Graphs
         #Bar Graph Title update
         output$titlePop <- renderUI({
-          strong("Bar Graph")
+          strong("Lineage distribution of the population")
         })
         
         #slider input update
         output$barBox <- renderUI({
           sliderInput(inputId = "slInp"
-                      , label = "Order the bars for the following K-value:"
+                      , label = "Select the lineage value used to order the individuals:"
                       , min = 0, max = 10, value = 5, round = TRUE, animate = FALSE
           )
         })
@@ -319,7 +319,7 @@ server <-
                     fluidRow(
                       column(6, 
                              flowLayout(
-                               strong("Population Bar Graph")
+                               strong("Lineage distribution of the Population")
                                
                              )
                              , plotOutput(outputId = "BarPlotPop"
@@ -327,13 +327,13 @@ server <-
                                           )
                              ,br(),
                              sliderInput(inputId = "slInpInd"
-                                         , label = "Order the bars for the following number:"
+                                         , label = "Select the lineage value used to order the individuals:"
                                          , min = 0, max = 10, value = 5, round = TRUE, animate = FALSE
                              )
                       )
                       , 
                       column(4
-                             , flowLayout(strong("Bar Graph Legend"))
+                             , flowLayout(strong("Lineage"))
                                          , plotlyOutput(outputId = "BarLgnd"
                                                         , width = 250, height = 400)
                              , offset = 1
@@ -344,14 +344,14 @@ server <-
                       
                       #HeatMap
                       column(6,
-                             flowLayout(strong("Heat Map")),
+                             flowLayout(strong("Lineage of each pair of individuals")),
                              plotlyOutput(outputId = "HeatPlotInd"
                                        , width = heatWidth, height = heatHeight
                              )
                             
                       ),
                       column(4,
-                             flowLayout(strong("Bar Graph for Individuals")),
+                             flowLayout(strong("Lineage Distribution of each Individual")),
                              plotlyOutput(outputId = "BarPlotInd"
                                         , width = barWidth, height = barHeight
                                         )
