@@ -293,10 +293,6 @@ server <-
           )
         })
         
-        # output$barBoxPlot <- renderPlotly({
-        #   ggplotly(barplot_ggplot())
-        # })
-        
         #bar plot
         output$barBoxPlot <- renderUI({
           plotOutput("Barplot", width = 700, height = 300
@@ -443,7 +439,7 @@ server <-
         # POP: MDS and Box Graphs | IND: NONE (display a message)
         #update title to Box Plot
         output$titlePop <- renderUI({
-          strong("Box Plot")
+          strong("IBS distribution of the population")
         })
         
         #remove previous slider inputs

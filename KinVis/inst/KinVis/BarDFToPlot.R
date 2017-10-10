@@ -31,7 +31,7 @@ BarDFToPlot <- function(Ds_df, Individual_Name, hglData = NULL){
     barPlotI <- ggplot(Ds_df, aes(x=Individual_Name, y=Frequency)) +
       #scale_y_continuous(limits = c(0,1)) +#, breaks = ((0:1)/20) ) +
       geom_bar(width = 0.5
-               , stat = "identity", aes(text = paste0("Number_Frequency: "
+               , stat = "identity", aes(text = paste0("Frequency: "
                                                     ,  as.factor(Frequency))
                                       , fill = factor(Value))) +
       scale_fill_manual(labels = lineageNames
@@ -58,7 +58,7 @@ BarDFToPlot <- function(Ds_df, Individual_Name, hglData = NULL){
       #scale_y_continuous(limits = c(0,1)) +#, breaks = ((0:1)/20) ) +
       geom_bar(mapping = aes(x=Individual_Name
                              , y=Frequency
-                             , text = paste0("Number_Frequency: "
+                             , text = paste0("Frequency: "
                                                     ,  as.factor(Frequency))
                              , fill = factor(Value)
                              , alpha = Chosen

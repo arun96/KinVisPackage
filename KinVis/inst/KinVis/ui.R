@@ -107,7 +107,7 @@ fluidPage (
           
           #A ROW OF PLOTTING: (1). MDS, (2). BOX/BAR Graphs
           fixedRow(
-            column(4, strong("Populations similarity map based on lineage")
+            column(4, strong("Populations similarity map based on lineage/correlation")
                    #plotting MDS plots
                    , plotlyOutput(outputId = "MDSplot"
                                   , width = 260, height = 300),

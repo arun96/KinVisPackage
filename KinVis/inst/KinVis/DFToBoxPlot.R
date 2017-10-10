@@ -20,7 +20,7 @@ DFToBoxPlot <- function(IBS_df, ordByMed){
                                    #,colour=SUPERPOP.name
              geom_boxplot() +
              coord_flip(ylim = c(0.85,1)) + 
-             ylab("IBS indep") +  
+             ylab("IBS") +  
              xlab("Population name") #+
              #scale_colour_discrete(name="Superpopulation")
 }
